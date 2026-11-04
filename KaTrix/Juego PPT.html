@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="es">
+  <!-- Configuración de la página y recursos del juego -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101113" />
+    <title>KaTrix — Juego</title>
+    <link rel="icon" href="imagenes/katrix-favicon.png" type="image/png" />
+    <link rel="stylesheet" href="CSS/ESTILO.css" />
+    <script src="JS/Desplegable.js" defer></script>
+  </head>
+  <body>
+    <!-- Encabezado común con identidad, navegación y acceso a los ejercicios -->
+    <header class="encabezado-sitio">
+      <a class="marca" href="inicio.html" aria-label="KaTrix, inicio"
+        ><img src="imagenes/katrix-logo.png" alt="" /><span>KaTrix</span></a
+      >
+
+      <!-- Enlaces a las secciones principales del sitio -->
+      <nav class="navegacion-sitio" aria-label="Navegación principal">
+        <a href="inicio.html">Inicio</a>
+        <a href="Horario.html">Horario</a>
+        <a href="Formulario.html">Formulario</a>
+        <a href="Calculadora.html">Calculadora</a>
+        <a href="Juego PPT.html" aria-current="page">Piedra, papel o tijera</a>
+      </nav>
+
+      <!-- Menú para abrir los ejercicios disponibles -->
+      <div class="desplegable-header">
+        <button class="boton-desplegable" type="button" aria-expanded="false">
+          <span>Ejercicio</span>
+          <span class="flecha" aria-hidden="true">▼</span>
+        </button>
+        <div class="contenido-desplegable">
+          <a href="Ejercicio 11.html">Parte 1, Ejercicio 1</a>
+          <a href="Ejercicio 21.html">Parte 1, Ejercicio 2</a>
+          <a href="Ejercicio 31.html">Parte 1, Ejercicio 3</a>
+          <hr />
+          <a href="Ejercicio 12.html">Parte 2, Ejercicio 1</a>
+          <a href="Ejercicio 22.html">Parte 2, Ejercicio 2</a>
+          <a href="Ejercicio 32.html">Parte 2, Ejercicio 3</a>
+          <hr />
+          <a href="Ejercicio 13.html">Parte 3, Ejercicio 1</a>
+          <a href="Ejercicio 23.html">Parte 3, Ejercicio 2</a>
+          <hr />
+          <a href="Ejercicio 14.html">Parte 4, Ejercicio 1</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contenido principal del juego -->
+    <main class="contenedor-pagina">
+      <section aria-labelledby="titulo-juego">
+        <h1 class="titulo-pagina" id="titulo-juego">
+          JUEGA AL FAMOSO JUEGO DE<br /><span class="texto-degradado"
+            >PIEDRA, PAPEL O TIJERA</span
+          >
+        </h1>
+        <p class="introduccion-pagina">
+          Elige tu opción y enfréntate a la CPU.
+        </p>
+      </section>
+
+      <!-- Marcador y jugadas actuales del jugador y la CPU -->
+      <section
+        class="disposicion-juego panel"
+        aria-label="Juego de piedra, papel o tijera"
+      >
+        <div class="marcador">
+          <div class="tarjeta-jugador">
+            <img
+              id="jugador-usuario"
+              src="./imagenes/persona.svg"
+              alt="Tu jugada"
+            />
+            <p>Tú</p>
+            <p class="puntuacion" id="puntos-usuario" aria-label="Tus puntos">
+              0
+            </p>
+          </div>
+          <div class="enfrentamiento" aria-live="polite">
+            <h2 class="aviso-juego" id="resultado">ELIGE TU JUGADA</h2>
+          </div>
+          <div class="tarjeta-jugador">
+            <img
+              id="jugador-cpu"
+              src="./imagenes/cpu.svg"
+              alt="Jugada de la CPU"
+            />
+            <p>CPU</p>
+            <p class="puntuacion" id="puntos-cpu" aria-label="Puntos de la CPU">
+              0
+            </p>
+          </div>
+        </div>
+
+        <!-- Botones para seleccionar una jugada -->
+        <div class="opciones-juego" aria-label="Elige piedra, papel o tijera">
+          <button
+            id="piedra"
+            type="button"
+            aria-label="Elegir piedra"
+            aria-pressed="false"
+          >
+            <img src="./imagenes/piedra.svg" alt="" />
+          </button>
+          <button
+            id="papel"
+            type="button"
+            aria-label="Elegir papel"
+            aria-pressed="false"
+          >
+            <img src="./imagenes/papel.svg" alt="" />
+          </button>
+          <button
+            id="tijera"
+            type="button"
+            aria-label="Elegir tijera"
+            aria-pressed="false"
+          >
+            <img src="./imagenes/tijera.svg" alt="" />
+          </button>
+        </div>
+        <p class="reglas-juego">
+          Piedra gana a tijera <span aria-hidden="true">·</span> Papel gana a
+          piedra <span aria-hidden="true">·</span> Tijera gana a papel
+        </p>
+
+        <!-- Controles para iniciar una ronda o reiniciar la partida -->
+        <div class="controles-juego">
+          <button id="iniciar-ronda" type="button">
+            <img src="./imagenes/play.svg" alt="" /> Jugar ronda
+          </button>
+          <button id="reiniciar-juego" type="button">
+            <img src="./imagenes/reset.svg" alt="" /> Reiniciar
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pie común con presentación, navegación y redes profesionales -->
+    <footer class="pie-portada">
+      <div class="pie-portada-columnas">
+        <section class="pie-presentacion" aria-labelledby="nombre-pie">
+          <h2 id="nombre-pie">
+            <span class="indicador-disponible" aria-hidden="true"></span>
+            Alejandro Reina
+          </h2>
+          <p>
+            Alumno de primer grado de Desarrollo de Aplicaciones Web (DAW).
+            Creo proyectos utilizando HTML, CSS y JavaScript.
+          </p>
+          <span class="insignia-estudios">Grado Superior DAW — 2026</span>
+        </section>
+        <nav class="pie-navegacion" aria-label="Navegación del pie de página">
+          <h2>Navegación</h2>
+          <a href="inicio.html#inicio">Inicio</a>
+          <a href="inicio.html#secciones">Mis proyectos</a>
+        </nav>
+        <section class="pie-redes" aria-labelledby="titulo-redes">
+          <h2 id="titulo-redes">Redes profesionales</h2>
+          <a
+            href="https://github.com/alejandroilliareina-beep?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+          >GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </section>
+      </div>
+      <div class="pie-portada-final">
+        <p>© 2026 Alejandro. Diseñado para mi primera web.</p>
+        <p>Hecho con <span aria-label="amor">♥</span> en España</p>
+      </div>
+    </footer>
+    <script src="./JS/Juego.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+<!-- Patrón repetible de disquetes para los títulos de capítulo -->
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="28" viewBox="0 0 50 28">
+  <rect width="50" height="28" fill="#a7eeee"/>
+  <g fill="#72d2d7" stroke="#347f88" stroke-width="0.8">
+    <path d="M2 3h12l3 3v18H2z"/>
+    <path d="M5 4h6v6H5z" fill="#d2ffff"/>
+    <path d="M5 13h8v8H5z" fill="#a0e9eb"/>
+    <path d="M7 15h4v4H7z" fill="#e1ffff" stroke="none"/>
+  </g>
+  <path d="M19 3v22M0 26h50" fill="none" stroke="#7edadd" stroke-width="1"/>
+</svg>

@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="es">
+  <!-- Configuración de la página y carga de estilos y validaciones -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101113" />
+    <title>KaTrix — Formulario</title>
+    <link rel="icon" href="imagenes/katrix-favicon.png" type="image/png" />
+    <link rel="stylesheet" href="CSS/ESTILO.css" />
+    <script src="JS/Desplegable.js" defer></script>
+    <script src="JS/Formulario.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Encabezado común con identidad, navegación y acceso a los ejercicios -->
+    <header class="encabezado-sitio">
+      <a class="marca" href="inicio.html" aria-label="KaTrix, inicio"
+        ><img src="imagenes/katrix-logo.png" alt="" /><span>KaTrix</span></a
+      >
+
+      <!-- Enlaces a las secciones principales del sitio -->
+      <nav class="navegacion-sitio" aria-label="Navegación principal">
+        <a href="inicio.html">Inicio</a>
+        <a href="Horario.html">Horario</a>
+        <a href="Formulario.html" aria-current="page">Formulario</a>
+        <a href="Calculadora.html">Calculadora</a>
+        <a href="Juego PPT.html">Piedra, papel o tijera</a>
+      </nav>
+
+      <!-- Menú para abrir los ejercicios disponibles -->
+      <div class="desplegable-header">
+        <button class="boton-desplegable" type="button" aria-expanded="false">
+          <span>Ejercicio</span>
+          <span class="flecha" aria-hidden="true">▼</span>
+        </button>
+        <div class="contenido-desplegable">
+          <a href="Ejercicio 11.html">Parte 1, Ejercicio 1</a>
+          <a href="Ejercicio 21.html">Parte 1, Ejercicio 2</a>
+          <a href="Ejercicio 31.html">Parte 1, Ejercicio 3</a>
+          <hr />
+          <a href="Ejercicio 12.html">Parte 2, Ejercicio 1</a>
+          <a href="Ejercicio 22.html">Parte 2, Ejercicio 2</a>
+          <a href="Ejercicio 32.html">Parte 2, Ejercicio 3</a>
+          <hr />
+          <a href="Ejercicio 13.html">Parte 3, Ejercicio 1</a>
+          <a href="Ejercicio 23.html">Parte 3, Ejercicio 2</a>
+          <hr />
+          <a href="Ejercicio 14.html">Parte 4, Ejercicio 1</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contenido principal del formulario -->
+    <main class="contenedor-pagina">
+      <section aria-labelledby="titulo-registro">
+        <h1 class="titulo-pagina" id="titulo-registro">
+          CREA TU<br /><span class="texto-degradado">PERFIL.</span>
+        </h1>
+        <p class="introduccion-pagina">
+          Completa tus datos para dejar listo tu registro.
+        </p>
+
+        <!-- Formulario dividido en grupos de datos y opciones -->
+        <form class="disposicion-formulario panel" id="formulario-registro">
+          <!-- Datos personales y credenciales -->
+          <fieldset class="grupo-formulario">
+            <legend>Datos de registro</legend>
+            <p class="nota-formulario">Los campos marcados son obligatorios.</p>
+            <div class="rejilla-formulario">
+              <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input
+                  class="controles"
+                  type="text"
+                  name="nombre"
+                  id="nombre"
+                  autocomplete="given-name"
+                  placeholder="Tu nombre"
+                  required
+                />
+              </div>
+              <div class="campo">
+                <label for="primer-apellido">Primer apellido</label>
+                <input
+                  class="controles"
+                  type="text"
+                  name="primer-apellido"
+                  id="primer-apellido"
+                  autocomplete="family-name"
+                  placeholder="Tu primer apellido"
+                  required
+                />
+              </div>
+              <div class="campo">
+                <label for="segundo-apellido">Segundo apellido</label>
+                <input
+                  class="controles"
+                  type="text"
+                  name="segundo-apellido"
+                  id="segundo-apellido"
+                  placeholder="Tu segundo apellido"
+                />
+              </div>
+              <div class="campo">
+                <label for="telefono">Teléfono</label>
+                <input
+                  class="controles"
+                  type="tel"
+                  name="telefono"
+                  id="telefono"
+                  autocomplete="tel"
+                  placeholder="600 000 000"
+                  required
+                />
+              </div>
+              <div class="campo">
+                <label for="correo">Correo electrónico</label>
+                <input
+                  class="controles"
+                  type="email"
+                  name="correo"
+                  id="correo"
+                  autocomplete="email"
+                  placeholder="nombre@ejemplo.com"
+                  required
+                />
+              </div>
+              <div class="campo">
+                <label for="confirmar-correo">Confirma tu correo</label>
+                <input
+                  class="controles"
+                  type="email"
+                  id="confirmar-correo"
+                  autocomplete="email"
+                  placeholder="Repite tu correo"
+                  required
+                />
+              </div>
+              <div class="campo">
+                <label for="contrasena">Contraseña</label>
+                <input
+                  class="controles"
+                  type="password"
+                  name="contrasena"
+                  id="contrasena"
+                  autocomplete="new-password"
+                  minlength="8"
+                  placeholder="Mínimo 8 caracteres"
+                  required
+                />
+              </div>
+              <div class="campo">
+                <label for="confirmar-contrasena">Confirma tu contraseña</label>
+                <input
+                  class="controles"
+                  type="password"
+                  id="confirmar-contrasena"
+                  autocomplete="new-password"
+                  minlength="8"
+                  placeholder="Repite tu contraseña"
+                  required
+                />
+              </div>
+              <div class="campo ancho-completo">
+                <label for="situacion">¿Trabajas o estudias?</label>
+                <input
+                  class="controles"
+                  type="text"
+                  name="situacion"
+                  id="situacion"
+                  placeholder="Cuéntanos brevemente"
+                  required
+                />
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Campos para elegir fechas, horas y valores -->
+          <fieldset class="grupo-formulario">
+            <legend>Fecha y hora</legend>
+            <div class="rejilla-formulario">
+              <div class="campo">
+                <label for="fecha">Fecha</label>
+                <input class="controles" type="date" name="fecha" id="fecha" />
+              </div>
+              <div class="campo">
+                <label for="hora">Hora</label>
+                <input class="controles" type="time" name="hora" id="hora" />
+              </div>
+              <div class="campo">
+                <label for="fecha-hora">Fecha y hora</label>
+                <input
+                  class="controles"
+                  type="datetime-local"
+                  name="fecha-hora"
+                  id="fecha-hora"
+                />
+              </div>
+              <div class="campo">
+                <label for="mes">Mes</label>
+                <input class="controles" type="month" name="mes" id="mes" />
+              </div>
+              <div class="campo">
+                <label for="semana">Semana</label>
+                <input
+                  class="controles"
+                  type="week"
+                  name="semana"
+                  id="semana"
+                />
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Edad, nivel mediante deslizador y selector de color -->
+          <fieldset class="grupo-formulario">
+            <legend>Valores numéricos</legend>
+            <div class="rejilla-formulario">
+              <div class="campo">
+                <label for="edad">Edad</label>
+                <input
+                  class="controles"
+                  type="number"
+                  name="edad"
+                  id="edad"
+                  min="0"
+                  max="120"
+                  step="1"
+                  placeholder="Tu edad"
+                />
+              </div>
+              <div class="campo">
+                <label for="nivel"
+                  >Nivel:
+                  <output id="nivel-valor" for="nivel">5</output>/10</label
+                >
+                <input
+                  class="control-rango"
+                  type="range"
+                  name="nivel"
+                  id="nivel"
+                  min="0"
+                  max="10"
+                  value="5"
+                />
+              </div>
+              <div class="campo">
+                <label for="color-favorito">Color favorito</label>
+                <input
+                  class="control-color"
+                  type="color"
+                  name="color-favorito"
+                  id="color-favorito"
+                  value="#7894ff"
+                />
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Intereses que se pueden combinar y turno preferido -->
+          <fieldset class="grupo-formulario">
+            <legend>Opciones</legend>
+            <div class="rejilla-formulario">
+              <fieldset class="campo opciones ancho-completo">
+                <legend class="etiqueta-campo">¿Qué te interesa?</legend>
+                <div class="opciones-formulario">
+                  <label
+                    ><input
+                      class="control-opcion"
+                      type="checkbox"
+                      name="intereses"
+                      value="programacion"
+                    />
+                    Programación</label
+                  >
+                  <label
+                    ><input
+                      class="control-opcion"
+                      type="checkbox"
+                      name="intereses"
+                      value="diseno"
+                    />
+                    Diseño</label
+                  >
+                  <label
+                    ><input
+                      class="control-opcion"
+                      type="checkbox"
+                      name="intereses"
+                      value="deporte"
+                    />
+                    Deporte</label
+                  >
+                </div>
+              </fieldset>
+              <fieldset class="campo opciones ancho-completo">
+                <legend class="etiqueta-campo">Turno preferido</legend>
+                <div class="opciones-formulario">
+                  <label
+                    ><input
+                      class="control-opcion"
+                      type="radio"
+                      name="turno"
+                      value="manana"
+                    />
+                    Mañana</label
+                  >
+                  <label
+                    ><input
+                      class="control-opcion"
+                      type="radio"
+                      name="turno"
+                      value="tarde"
+                    />
+                    Tarde</label
+                  >
+                  <label
+                    ><input
+                      class="control-opcion"
+                      type="radio"
+                      name="turno"
+                      value="indiferente"
+                    />
+                    Indiferente</label
+                  >
+                </div>
+              </fieldset>
+            </div>
+          </fieldset>
+
+          <!-- Selección de provincia y lenguajes favoritos -->
+          <fieldset class="grupo-formulario">
+            <legend>Listas</legend>
+            <div class="rejilla-formulario">
+              <div class="campo">
+                <label for="provincia">Provincia</label>
+                <select class="controles" name="provincia" id="provincia">
+                  <option value="">Selecciona una provincia</option>
+                  <option value="alicante">Alicante</option>
+                  <option value="castellon">Castellón</option>
+                  <option value="valencia">Valencia</option>
+                  <option value="otra">Otra</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="lenguajes"
+                  >Lenguajes favoritos (puedes elegir varios)</label
+                >
+                <select
+                  class="controles"
+                  name="lenguajes"
+                  id="lenguajes"
+                  multiple
+                  size="4"
+                >
+                  <option value="html">HTML</option>
+                  <option value="css">CSS</option>
+                  <option value="javascript">JavaScript</option>
+                  <option value="java">Java</option>
+                  <option value="python">Python</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Campo libre para escribir comentarios -->
+          <fieldset class="grupo-formulario">
+            <legend>Texto</legend>
+            <div class="campo">
+              <label for="comentarios">Comentarios</label>
+              <textarea
+                class="controles"
+                name="comentarios"
+                id="comentarios"
+                rows="5"
+                placeholder="Escribe aquí tus comentarios"
+              ></textarea>
+            </div>
+          </fieldset>
+
+          <!-- Archivo adjunto, navegador sugerido y dirección web -->
+          <fieldset class="grupo-formulario">
+            <legend>Otros elementos</legend>
+            <div class="rejilla-formulario">
+              <div class="campo">
+                <label for="archivo">Selecciona un archivo</label>
+                <input
+                  class="controles"
+                  type="file"
+                  name="archivo"
+                  id="archivo"
+                />
+              </div>
+              <div class="campo">
+                <label for="navegador">Navegador favorito</label>
+                <input
+                  class="controles"
+                  type="text"
+                  name="navegador"
+                  id="navegador"
+                  list="navegadores"
+                  placeholder="Elige o escribe uno"
+                />
+                <datalist id="navegadores">
+                  <option value="Chrome"></option>
+                  <option value="Firefox"></option>
+                  <option value="Safari"></option>
+                  <option value="Edge"></option>
+                </datalist>
+              </div>
+              <div class="campo ancho-completo">
+                <label for="web">Página web</label>
+                <input
+                  class="controles"
+                  type="url"
+                  name="web"
+                  id="web"
+                  placeholder="https://ejemplo.com"
+                />
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Acciones de validar y limpiar el formulario -->
+          <div class="pie-formulario">
+            <p class="nota-formulario">
+              Formulario de demostración. Tus datos no se envían ni se guardan.
+            </p>
+            <div class="acciones-formulario">
+              <button class="boton-accion" type="submit">
+                Validar registro <span aria-hidden="true">↗</span>
+              </button>
+              <button class="boton-accion secundario" type="reset">
+                Limpiar formulario
+              </button>
+            </div>
+          </div>
+          <p
+            class="estado-formulario"
+            id="estado-formulario"
+            aria-live="polite"
+          ></p>
+        </form>
+      </section>
+    </main>
+
+    <!-- Pie común con presentación, navegación y redes profesionales -->
+    <footer class="pie-portada">
+      <div class="pie-portada-columnas">
+        <section class="pie-presentacion" aria-labelledby="nombre-pie">
+          <h2 id="nombre-pie">
+            <span class="indicador-disponible" aria-hidden="true"></span>
+            Alejandro Reina
+          </h2>
+          <p>
+            Alumno de primer grado de Desarrollo de Aplicaciones Web (DAW).
+            Creo proyectos utilizando HTML, CSS y JavaScript.
+          </p>
+          <span class="insignia-estudios">Grado Superior DAW — 2026</span>
+        </section>
+        <nav class="pie-navegacion" aria-label="Navegación del pie de página">
+          <h2>Navegación</h2>
+          <a href="inicio.html#inicio">Inicio</a>
+          <a href="inicio.html#secciones">Mis proyectos</a>
+        </nav>
+        <section class="pie-redes" aria-labelledby="titulo-redes">
+          <h2 id="titulo-redes">Redes profesionales</h2>
+          <a
+            href="https://github.com/alejandroilliareina-beep?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+          >GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </section>
+      </div>
+      <div class="pie-portada-final">
+        <p>© 2026 Alejandro. Diseñado para mi primera web.</p>
+        <p>Hecho con <span aria-label="amor">♥</span> en España</p>
+      </div>
+    </footer>
+  </body>
+</html>

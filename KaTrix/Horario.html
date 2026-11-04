@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="es">
+  <!-- Configuración de la página, título y recursos externos -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101113" />
+    <title>KaTrix — Horario</title>
+    <link rel="icon" href="imagenes/katrix-favicon.png" type="image/png" />
+    <link rel="stylesheet" href="CSS/ESTILO.css" />
+    <script src="JS/Desplegable.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Encabezado común con identidad, navegación y acceso a los ejercicios -->
+    <header class="encabezado-sitio">
+      <a class="marca" href="inicio.html" aria-label="KaTrix, inicio"
+        ><img src="imagenes/katrix-logo.png" alt="" /><span>KaTrix</span></a
+      >
+
+      <!-- Enlaces a las secciones principales del sitio -->
+      <nav class="navegacion-sitio" aria-label="Navegación principal">
+        <a href="inicio.html">Inicio</a>
+        <a href="Horario.html" aria-current="page">Horario</a>
+        <a href="Formulario.html">Formulario</a>
+        <a href="Calculadora.html">Calculadora</a>
+        <a href="Juego PPT.html">Piedra, papel o tijera</a>
+      </nav>
+
+      <!-- Menú para abrir los ejercicios disponibles -->
+      <div class="desplegable-header">
+        <button class="boton-desplegable" type="button" aria-expanded="false">
+          <span>Ejercicio</span>
+          <span class="flecha" aria-hidden="true">▼</span>
+        </button>
+        <div class="contenido-desplegable">
+          <a href="Ejercicio 11.html">Parte 1, Ejercicio 1</a>
+          <a href="Ejercicio 21.html">Parte 1, Ejercicio 2</a>
+          <a href="Ejercicio 31.html">Parte 1, Ejercicio 3</a>
+          <hr />
+          <a href="Ejercicio 12.html">Parte 2, Ejercicio 1</a>
+          <a href="Ejercicio 22.html">Parte 2, Ejercicio 2</a>
+          <a href="Ejercicio 32.html">Parte 2, Ejercicio 3</a>
+          <hr />
+          <a href="Ejercicio 13.html">Parte 3, Ejercicio 1</a>
+          <a href="Ejercicio 23.html">Parte 3, Ejercicio 2</a>
+          <hr />
+          <a href="Ejercicio 14.html">Parte 4, Ejercicio 1</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contenido principal: horario semanal y profesorado -->
+    <main class="contenedor-pagina">
+      <section aria-labelledby="titulo-horario">
+        <h1 class="titulo-pagina" id="titulo-horario">
+          MI HORARIO<br /><span class="texto-degradado">DE CLASES.</span>
+        </h1>
+        <p class="introduccion-pagina">
+          Todas mis asignaturas, de lunes a viernes.
+        </p>
+
+        <!-- Tabla con las asignaturas distribuidas durante la semana -->
+        <section class="seccion-horario panel" aria-labelledby="titulo-semana">
+          <div class="encabezado-seccion">
+            <h2 class="titulo-seccion" id="titulo-semana">Semana lectiva</h2>
+            <p>08:30 — 14:30</p>
+          </div>
+          <div
+            class="desplazamiento-tabla"
+            tabindex="0"
+            role="region"
+            aria-label="Horario semanal; desplázate horizontalmente para ver todos los días"
+          >
+            <table class="tabla-horario">
+              <thead>
+                <tr>
+                  <th scope="col">Horas</th>
+                  <th scope="col">Lunes</th>
+                  <th scope="col">Martes</th>
+                  <th scope="col">Miércoles</th>
+                  <th scope="col">Jueves</th>
+                  <th scope="col">Viernes</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <th scope="row">8:30–9:25</th>
+                  <td rowspan="2">Programación</td>
+                  <td>SINF</td>
+                  <td rowspan="2">BBDD</td>
+                  <td rowspan="2">Programación</td>
+                  <td rowspan="2">IPE</td>
+                </tr>
+                <tr>
+                  <th scope="row">9:25–10:20</th>
+                  <td>Inglés</td>
+                </tr>
+                <tr>
+                  <th scope="row">10:20–11:15</th>
+                  <td>Proyecto intermodular</td>
+                  <td>BBDD</td>
+                  <td>LLMM</td>
+                  <td>SINF</td>
+                  <td>Digitalización aplicada</td>
+                </tr>
+                <tr>
+                  <th scope="row">11:15–11:45</th>
+                  <td class="celda-recreo" colspan="5">R E C R E O</td>
+                </tr>
+                <tr>
+                  <th scope="row">11:45–12:40</th>
+                  <td>SINF</td>
+                  <td rowspan="2">BBDD</td>
+                  <td rowspan="2">Programación</td>
+                  <td>SINF</td>
+                  <td>Digitalización aplicada</td>
+                </tr>
+                <tr>
+                  <th scope="row">12:40–13:35</th>
+                  <td rowspan="2">LLMM</td>
+                  <td>Sostenibilidad aplicada</td>
+                  <td rowspan="2">Entorno de desarrollo</td>
+                </tr>
+                <tr>
+                  <th scope="row">13:35–14:30</th>
+                  <td>IPE</td>
+                  <td>SINF</td>
+                  <td>Inglés</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Tabla de asignaturas y profesorado -->
+        <section
+          class="seccion-horario panel"
+          aria-labelledby="titulo-profesorado"
+        >
+          <div class="encabezado-seccion">
+            <h2 class="titulo-seccion" id="titulo-profesorado">Profesores</h2>
+            <p>Asignaturas y profesorado</p>
+          </div>
+          <div class="desplazamiento-tabla">
+            <table class="tabla-profesorado">
+              <thead>
+                <tr>
+                  <th scope="col">Asignatura</th>
+                  <th scope="col">Profesorado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="asignatura-profesorado">Programación</td>
+                  <td>Fernando David Gómez Aranzabe</td>
+                </tr>
+                <tr>
+                  <td class="asignatura-profesorado">IPE</td>
+                  <td>María Isabel Oliver Pérez</td>
+                </tr>
+                <tr>
+                  <td class="asignatura-profesorado">Inglés</td>
+                  <td>María Teresa Rubio Muñoz</td>
+                </tr>
+                <tr>
+                  <td class="asignatura-profesorado">Entornos de desarrollo</td>
+                  <td>Javier Merino Blanco</td>
+                </tr>
+                <tr>
+                  <td class="asignatura-profesorado">SINF</td>
+                  <td>Jaime Alemany Rubio</td>
+                </tr>
+                <tr>
+                  <td class="asignatura-profesorado">
+                    Digitalización aplicada
+                  </td>
+                  <td>Juan Antonio Encinas Díaz</td>
+                </tr>
+                <tr>
+                  <td class="asignatura-profesorado">BBDD</td>
+                  <td>Alicia Velasco Fernández</td>
+                </tr>
+                <tr>
+                  <td class="asignatura-profesorado">LLMM</td>
+                  <td>Juan Antonio Encinas Díaz</td>
+                </tr>
+                <tr>
+                  <td class="asignatura-profesorado">
+                    Sostenibilidad aplicada
+                  </td>
+                  <td>Francisco Javier Redondo Lorenzo</td>
+                </tr>
+                <tr>
+                  <td class="asignatura-profesorado">Proyecto intermodular</td>
+                  <td>Javier Merino Blanco</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!-- Pie común con presentación, navegación y redes profesionales -->
+    <footer class="pie-portada">
+      <div class="pie-portada-columnas">
+        <section class="pie-presentacion" aria-labelledby="nombre-pie">
+          <h2 id="nombre-pie">
+            <span class="indicador-disponible" aria-hidden="true"></span>
+            Alejandro Reina
+          </h2>
+          <p>
+            Alumno de primer grado de Desarrollo de Aplicaciones Web (DAW).
+            Creo proyectos utilizando HTML, CSS y JavaScript.
+          </p>
+          <span class="insignia-estudios">Grado Superior DAW — 2026</span>
+        </section>
+        <nav class="pie-navegacion" aria-label="Navegación del pie de página">
+          <h2>Navegación</h2>
+          <a href="inicio.html#inicio">Inicio</a>
+          <a href="inicio.html#secciones">Mis proyectos</a>
+        </nav>
+        <section class="pie-redes" aria-labelledby="titulo-redes">
+          <h2 id="titulo-redes">Redes profesionales</h2>
+          <a
+            href="https://github.com/alejandroilliareina-beep?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+          >GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </section>
+      </div>
+      <div class="pie-portada-final">
+        <p>© 2026 Alejandro. Diseñado para mi primera web.</p>
+        <p>Hecho con <span aria-label="amor">♥</span> en España</p>
+      </div>
+    </footer>
+  </body>
+</html>

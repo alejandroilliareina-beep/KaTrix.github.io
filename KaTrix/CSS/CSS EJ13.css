@@ -1,0 +1,82 @@
+/* Cuadro centrado que reúne los capítulos del ejercicio */
+.contenedor-capitulos {
+  width: min(800px, 100%);
+  margin: 0 auto;
+  padding: 15px;
+  border: 1px solid #4a7ebb;
+  background: #fff;
+  color: #111;
+  font-family: Arial, sans-serif;
+}
+
+/* Separa los capítulos sin añadir espacio al final del cuadro */
+.capitulo + .capitulo {
+  margin-top: 12px;
+}
+
+/* Banda de capítulo con patrón repetido de disquetes */
+.titulo-capitulo {
+  min-height: 28px;
+  margin: 0 0 10px;
+  display: grid;
+  place-items: center;
+  background-color: #a7eeee;
+  background-image: url("../imagenes/patron-capitulos.svg");
+  background-repeat: repeat;
+  color: #101113;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 800;
+}
+
+/* Bloques de texto de cada capítulo */
+.texto-capitulo {
+  padding: 9px;
+  border-radius: 0;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.texto-capitulo p {
+  margin: 0;
+}
+
+.texto-verde {
+  background: #c9ffb6;
+  color: #111;
+}
+
+.texto-amarillo {
+  margin: 0 10px;
+  background: #f3d66b;
+  color: #111;
+}
+
+.texto-morado {
+  background: #5614e9;
+  color: #fff;
+}
+
+/* Resaltados de palabras dentro de los párrafos */
+.resaltado {
+  font-weight: 800;
+}
+
+.resaltado-verde {
+  background: #a8ed71;
+}
+
+.resaltado-amarillo {
+  background: #f0bf00;
+}
+
+@media (max-width: 480px) {
+  .contenedor-capitulos {
+    padding: 10px;
+  }
+
+  .texto-capitulo {
+    font-size: 10px;
+  }
+}

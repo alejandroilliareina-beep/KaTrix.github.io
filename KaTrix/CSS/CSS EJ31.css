@@ -1,0 +1,112 @@
+/* Ajustes generales de títulos y disposición de las tablas */
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 16px;
+}
+
+.instruccion {
+  margin-top: 12px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.contenido-tablas-ejercicio {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.titulo-tabla {
+  margin: 0;
+  text-align: center;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.tabla {
+  width: 55%;
+  margin: 0 auto 0;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 5px;
+}
+
+.tabla th,
+.tabla td {
+  padding: 15px 10px;
+  font-size: 16px;
+}
+
+.tabla-azul {
+  border: 2px solid blue;
+  padding: 5px;
+  background-color: white;
+}
+
+.tabla-azul th,
+.tabla-azul td {
+  border: 2px solid blue;
+}
+
+.celda {
+  background-color: white;
+  color: black;
+}
+
+.columna {
+  background-color: white;
+  color: black;
+}
+
+.tabla-azul td {
+  height: 52px;
+}
+
+.titulo-tabla-2 {
+  margin-top: 8px;
+}
+
+.tabla-verde {
+  width: 65%;
+  margin-top: 0;
+  border: 2px solid #e4c400;
+  border-spacing: 0;
+  color: black;
+}
+
+.tabla-verde th,
+.tabla-verde td {
+  height: 60px;
+  border-right: 1px solid #e4c400;
+  border-bottom: 1px solid #e4c400;
+  background-color: #ddd;
+}
+
+.tabla-verde th:last-child,
+.tabla-verde td:last-child {
+  border-right: 0;
+}
+
+.tabla-verde tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.tabla-verde .fila-verde td {
+  background-color: yellowgreen;
+}
+
+@media (max-width: 600px) {
+  .tabla {
+    width: 100%;
+  }
+
+  .tabla th,
+  .tabla td {
+    padding: 10px 4px;
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="es">
+  <!-- Configuración de la página y carga de estilos y funciones -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101113" />
+    <title>KaTrix — Calculadora</title>
+    <link rel="icon" href="imagenes/katrix-favicon.png" type="image/png" />
+    <link rel="stylesheet" href="CSS/ESTILO.css" />
+    <script src="JS/Desplegable.js" defer></script>
+    <script src="./JS/Calculadora.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Encabezado común con identidad, navegación y acceso a los ejercicios -->
+    <header class="encabezado-sitio">
+      <a class="marca" href="inicio.html" aria-label="KaTrix, inicio"
+        ><img src="imagenes/katrix-logo.png" alt="" /><span>KaTrix</span></a
+      >
+
+      <!-- Enlaces a las secciones principales del sitio -->
+      <nav class="navegacion-sitio" aria-label="Navegación principal">
+        <a href="inicio.html">Inicio</a>
+        <a href="Horario.html">Horario</a>
+        <a href="Formulario.html">Formulario</a>
+        <a href="Calculadora.html" aria-current="page">Calculadora</a>
+        <a href="Juego PPT.html">Piedra, papel o tijera</a>
+      </nav>
+
+      <!-- Menú para abrir los ejercicios disponibles -->
+      <div class="desplegable-header">
+        <button class="boton-desplegable" type="button" aria-expanded="false">
+          <span>Ejercicio</span>
+          <span class="flecha" aria-hidden="true">▼</span>
+        </button>
+        <div class="contenido-desplegable">
+          <a href="Ejercicio 11.html">Parte 1, Ejercicio 1</a>
+          <a href="Ejercicio 21.html">Parte 1, Ejercicio 2</a>
+          <a href="Ejercicio 31.html">Parte 1, Ejercicio 3</a>
+          <hr />
+          <a href="Ejercicio 12.html">Parte 2, Ejercicio 1</a>
+          <a href="Ejercicio 22.html">Parte 2, Ejercicio 2</a>
+          <a href="Ejercicio 32.html">Parte 2, Ejercicio 3</a>
+          <hr />
+          <a href="Ejercicio 13.html">Parte 3, Ejercicio 1</a>
+          <a href="Ejercicio 23.html">Parte 3, Ejercicio 2</a>
+          <hr />
+          <a href="Ejercicio 14.html">Parte 4, Ejercicio 1</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contenido principal de la calculadora -->
+    <main class="contenedor-pagina">
+      <section aria-labelledby="titulo-calculadora">
+        <h1 class="titulo-pagina" id="titulo-calculadora">
+          CALCULADORA<br /><span class="texto-degradado">ESTÁNDAR.</span>
+        </h1>
+        <p class="introduccion-pagina">
+          Una calculadora sencilla para resolver operaciones básicas al
+          instante.
+        </p>
+      </section>
+
+      <!-- Pantalla y botones que permiten introducir y calcular operaciones -->
+      <section class="disposicion-calculadora panel" aria-label="Calculadora">
+        <div class="encabezado-calculadora">
+          <h2 class="titulo-seccion">Calculadora</h2>
+          <span>ESTÁNDAR</span>
+        </div>
+        <table
+          class="teclas-calculadora"
+          aria-label="Teclado de la calculadora"
+        >
+          <thead>
+            <tr>
+              <th colspan="4">
+                <input
+                  type="text"
+                  id="pantalla"
+                  value="0"
+                  aria-label="Pantalla de la calculadora"
+                  readonly
+                />
+              </th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>
+                <button class="numero" type="button" onclick="escribir('7')">
+                  7
+                </button>
+              </td>
+              <td>
+                <button class="numero" type="button" onclick="escribir('8')">
+                  8
+                </button>
+              </td>
+              <td>
+                <button class="numero" type="button" onclick="escribir('9')">
+                  9
+                </button>
+              </td>
+              <td>
+                <button class="operador" type="button" onclick="escribir('/')">
+                  ÷
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <button class="numero" type="button" onclick="escribir('4')">
+                  4
+                </button>
+              </td>
+              <td>
+                <button class="numero" type="button" onclick="escribir('5')">
+                  5
+                </button>
+              </td>
+              <td>
+                <button class="numero" type="button" onclick="escribir('6')">
+                  6
+                </button>
+              </td>
+              <td>
+                <button class="operador" type="button" onclick="escribir('*')">
+                  ×
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <button class="numero" type="button" onclick="escribir('1')">
+                  1
+                </button>
+              </td>
+              <td>
+                <button class="numero" type="button" onclick="escribir('2')">
+                  2
+                </button>
+              </td>
+              <td>
+                <button class="numero" type="button" onclick="escribir('3')">
+                  3
+                </button>
+              </td>
+              <td>
+                <button class="operador" type="button" onclick="escribir('-')">
+                  −
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <button class="numero" type="button" onclick="escribir('0')">
+                  0
+                </button>
+              </td>
+              <td>
+                <button class="numero" type="button" onclick="escribir('.')">
+                  .
+                </button>
+              </td>
+              <td>
+                <button class="igual" type="button" onclick="calcular()">
+                  =
+                </button>
+              </td>
+              <td>
+                <button class="operador" type="button" onclick="escribir('+')">
+                  +
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="4">
+                <button class="borrar" type="button" onclick="borrar()">
+                  Borrar
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <!-- Pie común con presentación, navegación y redes profesionales -->
+    <footer class="pie-portada">
+      <div class="pie-portada-columnas">
+        <section class="pie-presentacion" aria-labelledby="nombre-pie">
+          <h2 id="nombre-pie">
+            <span class="indicador-disponible" aria-hidden="true"></span>
+            Alejandro Reina
+          </h2>
+          <p>
+            Alumno de primer grado de Desarrollo de Aplicaciones Web (DAW).
+            Creo proyectos utilizando HTML, CSS y JavaScript.
+          </p>
+          <span class="insignia-estudios">Grado Superior DAW — 2026</span>
+        </section>
+        <nav class="pie-navegacion" aria-label="Navegación del pie de página">
+          <h2>Navegación</h2>
+          <a href="inicio.html#inicio">Inicio</a>
+          <a href="inicio.html#secciones">Mis proyectos</a>
+        </nav>
+        <section class="pie-redes" aria-labelledby="titulo-redes">
+          <h2 id="titulo-redes">Redes profesionales</h2>
+          <a
+            href="https://github.com/alejandroilliareina-beep?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+          >GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </section>
+      </div>
+      <div class="pie-portada-final">
+        <p>© 2026 Alejandro. Diseñado para mi primera web.</p>
+        <p>Hecho con <span aria-label="amor">♥</span> en España</p>
+      </div>
+    </footer>
+  </body>
+</html>

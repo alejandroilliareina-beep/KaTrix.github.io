@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="es">
+  <!-- Configuración de la página y recursos compartidos -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101113" />
+    <title>KaTrix — Parte 2, Ejercicio 3</title>
+    <link rel="icon" href="imagenes/katrix-favicon.png" type="image/png" />
+    <link rel="stylesheet" href="CSS/ESTILO.css" />
+    <link rel="stylesheet" href="CSS/CSS EJ32.css" />
+    <script src="JS/Desplegable.js" defer></script>
+  </head>
+  <body>
+    <!-- Encabezado común con identidad, navegación y acceso a los ejercicios -->
+    <header class="encabezado-sitio">
+      <a class="marca" href="inicio.html" aria-label="KaTrix, inicio"
+        ><img src="imagenes/katrix-logo.png" alt="" /><span>KaTrix</span></a
+      >
+
+      <!-- Enlaces a las secciones principales del sitio -->
+      <nav class="navegacion-sitio" aria-label="Navegación principal">
+        <a href="inicio.html">Inicio</a>
+        <a href="Horario.html">Horario</a>
+        <a href="Formulario.html">Formulario</a>
+        <a href="Calculadora.html">Calculadora</a>
+        <a href="Juego PPT.html">Piedra, papel o tijera</a>
+      </nav>
+
+      <!-- Menú para abrir los ejercicios disponibles -->
+      <div class="desplegable-header">
+        <button class="boton-desplegable" type="button" aria-expanded="false">
+          <span>Ejercicio</span>
+          <span class="flecha" aria-hidden="true">▼</span>
+        </button>
+        <div class="contenido-desplegable">
+          <a href="Ejercicio 11.html">Parte 1, Ejercicio 1</a>
+          <a href="Ejercicio 21.html">Parte 1, Ejercicio 2</a>
+          <a href="Ejercicio 31.html">Parte 1, Ejercicio 3</a>
+          <hr />
+          <a href="Ejercicio 12.html">Parte 2, Ejercicio 1</a>
+          <a href="Ejercicio 22.html">Parte 2, Ejercicio 2</a>
+          <a href="Ejercicio 32.html">Parte 2, Ejercicio 3</a>
+          <hr />
+          <a href="Ejercicio 13.html">Parte 3, Ejercicio 1</a>
+          <a href="Ejercicio 23.html">Parte 3, Ejercicio 2</a>
+          <hr />
+          <a href="Ejercicio 14.html">Parte 4, Ejercicio 1</a>
+      </div>
+    </header>
+
+    <!-- Título e introducción del ejercicio -->
+    <main class="pagina-ejercicio">
+      <div class="encabezado-ejercicio">
+        <h1 class="titulo-pagina">
+          PARTE 2<br /><span class="texto-degradado">EJERCICIO 3.</span>
+        </h1>
+        <p class="introduccion-pagina">
+          Utiliza la etiqueta div y la etiqueta span para crear la siguiente
+          página.
+        </p>
+      </div>
+
+      <!-- Bloques de texto sobre la imagen de fondo y fragmentos resaltados -->
+      <section
+        class="contenedor-ejercicio"
+        aria-label="Bloques y estilos de texto"
+      >
+        <!-- Bloque DIV superior con fondo gris/azulado -->
+        <div class="bloque-div">
+          <h2>bloque div</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            aliquam tempor diam et accumsan. Vestibulum varius, sapien ut
+            dignissim interdum, lorem risus lacinia enim, in mattis enim urna et
+            sem. Suspendisse ligula lorem, egestas finibus tellus sit amet,
+            finibus posuere tellus. Mauris tempus dictum consequat. Etiam eu
+            dapibus ante. Sed at eros at sapien porttitor interdum nec nec leo.
+            Donec quis venenatis nisl. Nulla eget nunc nisl. Sed suscipit metus
+            eget orci aliquam lacinia ac id urna.
+          </p>
+          <p>
+            Sed non feugiat lorem. Praesent porttitor risus in consequat
+            sagittis. Maecenas ut magna interdum, euismod eros quis, blandit
+            neque. Ut rhoncus, magna eget tincidunt pellentesque.
+          </p>
+        </div>
+
+        <!-- Bloque inferior con fondo amarillento y estilos de texto inline -->
+        <div class="bloque-inferior">
+          <p>
+            Lorem ipsum dolor sit amet,
+            <span class="resaltado-magenta">consectetur adipiscing elit.</span>
+            <span class="destacado-negrita">Vivamus nec libero dignissim</span>,
+            consequat ex at, placerat velit. In accumsan ornare leo,
+            <span class="cursiva-subrayada"
+              >eget pulvinar nunc accumsan sed. Vestibulum dictum ante vel orci
+              commodo posuere eu ultrices nisi.</span
+            >
+            Praesent sed venenatis ligula. Aenean ac congue sem, sit amet
+            tincidunt sem. Nullam magna sapien, consequat in euismod vel,
+            volutpat vel lacus. Sed in pellentesque nunc. Praesent ullamcorper
+            purus ut mollis semper. Aenean bibendum eros ut tellus pretium
+            dignissim.
+          </p>
+        </div>
+      </section>
+
+      <section class="secciones-inicio" aria-label="Ejercicios disponibles">
+        <div class="rejilla-tarjetas">
+          <div class="tarjeta tarjeta-ejercicios">
+            <span class="icono-tarjeta" aria-hidden="true">✎</span>
+            <h3>Ejercicios parte 1</h3>
+            <p>
+              <a href="Ejercicio 11.html">Ejercicio 1</a>
+              <span aria-hidden="true">·</span>
+              <a href="Ejercicio 21.html">Ejercicio 2</a>
+              <span aria-hidden="true">·</span>
+              <a href="Ejercicio 31.html">Ejercicio 3</a>
+            </p>
+          </div>
+          <div class="tarjeta tarjeta-ejercicios">
+            <span class="icono-tarjeta" aria-hidden="true">✎</span>
+            <h3>Ejercicios parte 2</h3>
+            <p>
+              <a href="Ejercicio 12.html">Ejercicio 1</a>
+              <span aria-hidden="true">·</span>
+              <a href="Ejercicio 22.html">Ejercicio 2</a>
+              <span aria-hidden="true">·</span>
+              <a href="Ejercicio 32.html">Ejercicio 3</a>
+            </p>
+          </div>
+          <div class="tarjeta tarjeta-ejercicios">
+            <span class="icono-tarjeta" aria-hidden="true">✎</span>
+            <h3>Ejercicios parte 3</h3>
+            <p>
+              <a href="Ejercicio 13.html">Ejercicio 1</a>
+              <span aria-hidden="true">·</span>
+              <a href="Ejercicio 23.html">Ejercicio 2</a>
+            </p>
+          </div>
+          <div class="tarjeta tarjeta-ejercicios">
+            <span class="icono-tarjeta" aria-hidden="true">✎</span>
+            <h3>Ejercicios parte 4</h3>
+            <p><a href="Ejercicio 14.html">Ejercicio 1</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pie común con presentación, navegación y redes profesionales -->
+    <footer class="pie-portada">
+      <div class="pie-portada-columnas">
+        <section class="pie-presentacion" aria-labelledby="nombre-pie">
+          <h2 id="nombre-pie">
+            <span class="indicador-disponible" aria-hidden="true"></span>
+            Alejandro Reina
+          </h2>
+          <p>
+            Alumno de primer grado de Desarrollo de Aplicaciones Web (DAW).
+            Creo proyectos utilizando HTML, CSS y JavaScript.
+          </p>
+          <span class="insignia-estudios">Grado Superior DAW — 2026</span>
+        </section>
+        <nav class="pie-navegacion" aria-label="Navegación del pie de página">
+          <h2>Navegación</h2>
+          <a href="inicio.html#inicio">Inicio</a>
+          <a href="inicio.html#secciones">Mis proyectos</a>
+        </nav>
+        <section class="pie-redes" aria-labelledby="titulo-redes">
+          <h2 id="titulo-redes">Redes profesionales</h2>
+          <a
+            href="https://github.com/alejandroilliareina-beep?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+          >GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </section>
+      </div>
+      <div class="pie-portada-final">
+        <p>© 2026 Alejandro. Diseñado para mi primera web.</p>
+        <p>Hecho con <span aria-label="amor">♥</span> en España</p>
+      </div>
+    </footer>
+  </body>
+</html>

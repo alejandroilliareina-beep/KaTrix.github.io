@@ -1,0 +1,58 @@
+/* Tipografía base del ejercicio */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: white;
+}
+
+/* Cuadro centrado que contiene los ejemplos de listas */
+.contenedor-listas {
+    width: min(800px, 100%);
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #4a7ebb;
+    background: #fff;
+    color: #111;
+}
+
+/* Títulos de las listas y línea que separa ambos ejemplos */
+.seccion-titulo {
+    background-color: #4fc3f7;
+    text-align: center;
+    padding: 8px 0;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.seccion-titulo h2 {
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.divisor {
+    border: none;
+    border-top: 1px solid #777;
+    margin: 30px 0;
+}
+
+/* Viñetas de los niveles de las listas anidadas */
+.nivel-principal > li {
+    list-style-type: circle;
+    color: #000000;
+}
+
+.nivel-secundario > li {
+    list-style-type: square;
+    color: #000000;
+}
+
+.nivel-terciario > li {
+    list-style-type: lower-alpha;
+}
+
+.nivel-cuaternario > li {
+    list-style-type: lower-roman;
+}

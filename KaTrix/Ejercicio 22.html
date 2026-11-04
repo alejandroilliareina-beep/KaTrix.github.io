@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es">
+  <!-- Configuración de la página y recursos compartidos -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101113" />
+    <title>KaTrix — Parte 2, Ejercicio 2</title>
+    <link rel="icon" href="imagenes/katrix-favicon.png" type="image/png" />
+    <link rel="stylesheet" href="CSS/ESTILO.css" />
+    <link rel="stylesheet" href="CSS/CSS EJ22.css" />
+    <script src="JS/Desplegable.js" defer></script>
+  </head>
+  <body>
+    <!-- Encabezado común con identidad, navegación y acceso a los ejercicios -->
+    <header class="encabezado-sitio">
+      <a class="marca" href="inicio.html" aria-label="KaTrix, inicio"
+        ><img src="imagenes/katrix-logo.png" alt="" /><span>KaTrix</span></a
+      >
+
+      <!-- Enlaces a las secciones principales del sitio -->
+      <nav class="navegacion-sitio" aria-label="Navegación principal">
+        <a href="inicio.html">Inicio</a>
+        <a href="Horario.html">Horario</a>
+        <a href="Formulario.html">Formulario</a>
+        <a href="Calculadora.html">Calculadora</a>
+        <a href="Juego PPT.html">Piedra, papel o tijera</a>
+      </nav>
+
+      <!-- Menú para abrir los ejercicios disponibles -->
+      <div class="desplegable-header">
+        <button class="boton-desplegable" type="button" aria-expanded="false">
+          <span>Ejercicio</span>
+          <span class="flecha" aria-hidden="true">▼</span>
+        </button>
+        <div class="contenido-desplegable">
+          <a href="Ejercicio 11.html">Parte 1, Ejercicio 1</a>
+          <a href="Ejercicio 21.html">Parte 1, Ejercicio 2</a>
+          <a href="Ejercicio 31.html">Parte 1, Ejercicio 3</a>
+          <hr />
+          <a href="Ejercicio 12.html">Parte 2, Ejercicio 1</a>
+          <a href="Ejercicio 22.html">Parte 2, Ejercicio 2</a>
+          <a href="Ejercicio 32.html">Parte 2, Ejercicio 3</a>
+          <hr />
+          <a href="Ejercicio 13.html">Parte 3, Ejercicio 1</a>
+          <a href="Ejercicio 23.html">Parte 3, Ejercicio 2</a>
+          <hr />
+          <a href="Ejercicio 14.html">Parte 4, Ejercicio 1</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Título y contenido del ejercicio de menús -->
+    <main class="pagina-ejercicio">
+      <div class="encabezado-ejercicio">
+        <h1 class="titulo-pagina">
+          PARTE 2<br /><span class="texto-degradado">EJERCICIO 2.</span>
+        </h1>
+        <p class="introduccion-pagina">
+          Ejercicio de creación de menús horizontales y verticales con listas.
+        </p>
+      </div>
+
+      <!-- Ejemplos de menú horizontal y menú vertical -->
+      <section class="contenedor-ejercicio" aria-label="Ejercicio de menús">
+        <div class="seccion">
+          <p class="titulo-menu">Lista no ordenada: menú horizontal</p>
+
+          <ul class="menu-horizontal">
+            <li><a href="#">opción 1</a></li>
+            <li><a href="#">opción 2</a></li>
+            <li><a href="#">opción 3</a></li>
+            <li><a href="#">opción 4</a></li>
+            <li><a href="#">opción 5</a></li>
+          </ul>
+        </div>
+
+        <hr class="divisor" />
+
+        <div class="seccion">
+          <p class="titulo-menu">Lista no ordenada: menú vertical</p>
+
+          <ul class="menu-vertical">
+            <li><a href="#">opción 1</a></li>
+            <li><a href="#">opción 2</a></li>
+            <li class="activo"><a href="#">opción 3</a></li>
+            <li><a href="#">opción 4</a></li>
+            <li><a href="#">opción 5</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="secciones-inicio" aria-label="Ejercicios disponibles">
+        <div class="rejilla-tarjetas">
+          <div class="tarjeta tarjeta-ejercicios">
+            <span class="icono-tarjeta" aria-hidden="true">✎</span>
+            <h3>Ejercicios parte 1</h3>
+            <p>
+              <a href="Ejercicio 11.html">Ejercicio 1</a>
+              <span aria-hidden="true">·</span>
+              <a href="Ejercicio 21.html">Ejercicio 2</a>
+              <span aria-hidden="true">·</span>
+              <a href="Ejercicio 31.html">Ejercicio 3</a>
+            </p>
+          </div>
+          <div class="tarjeta tarjeta-ejercicios">
+            <span class="icono-tarjeta" aria-hidden="true">✎</span>
+            <h3>Ejercicios parte 2</h3>
+            <p>
+              <a href="Ejercicio 12.html">Ejercicio 1</a>
+              <span aria-hidden="true">·</span>
+              <a href="Ejercicio 22.html">Ejercicio 2</a>
+              <span aria-hidden="true">·</span>
+              <a href="Ejercicio 32.html">Ejercicio 3</a>
+            </p>
+          </div>
+          <div class="tarjeta tarjeta-ejercicios">
+            <span class="icono-tarjeta" aria-hidden="true">✎</span>
+            <h3>Ejercicios parte 3</h3>
+            <p>
+              <a href="Ejercicio 13.html">Ejercicio 1</a>
+              <span aria-hidden="true">·</span>
+              <a href="Ejercicio 23.html">Ejercicio 2</a>
+            </p>
+          </div>
+          <div class="tarjeta tarjeta-ejercicios">
+            <span class="icono-tarjeta" aria-hidden="true">✎</span>
+            <h3>Ejercicios parte 4</h3>
+            <p><a href="Ejercicio 14.html">Ejercicio 1</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pie común con presentación, navegación y redes profesionales -->
+    <footer class="pie-portada">
+      <div class="pie-portada-columnas">
+        <section class="pie-presentacion" aria-labelledby="nombre-pie">
+          <h2 id="nombre-pie">
+            <span class="indicador-disponible" aria-hidden="true"></span>
+            Alejandro Reina
+          </h2>
+          <p>
+            Alumno de primer grado de Desarrollo de Aplicaciones Web (DAW). Creo
+            proyectos utilizando HTML, CSS y JavaScript.
+          </p>
+
+          <span class="insignia-estudios">Grado Superior DAW — 2026</span>
+        </section>
+
+        <nav class="pie-navegacion" aria-label="Navegación del pie de página">
+          <h2>Navegación</h2>
+          <a href="inicio.html#inicio">Inicio</a>
+          <a href="inicio.html#secciones">Mis proyectos</a>
+        </nav>
+
+        <section class="pie-redes" aria-labelledby="titulo-redes">
+          <h2 id="titulo-redes">Redes profesionales</h2>
+
+          <a
+            href="https://github.com/alejandroilliareina-beep?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </section>
+      </div>
+
+      
+      <div class="pie-portada-final">
+        <p>© 2026 Alejandro. Diseñado para mi primera web.</p>
+
+        <p>Hecho con <span aria-label="amor">♥</span> en España</p>
+      </div>
+    </footer>
+  </body>
+</html>

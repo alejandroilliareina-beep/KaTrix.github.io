@@ -1,0 +1,68 @@
+/* Tipografía y cuadro centrado del ejercicio */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: white;
+}
+
+.contenedor-ejercicio {
+    width: min(800px, 100%);
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #4a7ebb;
+    background: #fff;
+    color: #111;
+}
+
+/* Títulos y separador entre ejemplos */
+.titulo-menu {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Línea divisoria */
+.divisor {
+    border: none;
+    border-top: 1px solid #777;
+    margin: 30px 0;
+}
+
+/* Lista presentada como menú horizontal */
+.menu-horizontal {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #82825c; /* Color marrón/verdoso de fondo del menú */
+    display: flex; /* Pone los elementos en horizontal */
+}
+
+.menu-horizontal li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 25px;
+}
+
+/* Lista presentada como menú vertical con una opción activa */
+.menu-vertical {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 200px; /* Ancho fijo para la caja del menú vertical */
+}
+
+.menu-vertical li {
+    background-color: #76db35; /* Color verde claro por defecto */
+    margin-bottom: 2px; /* Pequeña separación opcional entre elementos */
+}
+
+.menu-vertical li.activo {
+    background-color: #e53935; /* Color rojo para la opción activa (opción 3) */
+}
+
+.menu-vertical li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 20px;
+}

@@ -1,0 +1,75 @@
+/* Restablecimiento de espacios y tamaño de caja */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo y tipografía general de la página */
+body {
+  min-height: 100vh;
+  font-family: cursive;
+  background: #f4f6f8 url("../imagenes/fondo.jpg");
+  padding: 30px;
+  margin-top: 50px;
+}
+
+/* Encabezado y enlaces de navegación */
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -75px;
+  padding: 22px 40px;
+  gap: 20px;
+  box-shadow: 0 6px 5px;
+}
+
+header h1 {
+  color: white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding-right: 15px;
+}
+
+/* Distribución de la calculadora y aspecto de su tabla */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 6px 20px #0003;
+}
+
+th {
+  padding: 12px;
+}
+
+td {
+  padding: 5px;
+}
+
+#pantalla {
+  width: 100%;
+  padding: 10px;
+  text-align: right;
+}
+
+button {
+  width: 55px;
+  height: 45px;
+  cursor: pointer;
+}
+
+td[colspan="4"] button {
+  width: 100%;
+}

@@ -1,0 +1,51 @@
+/* Cuadro del ejercicio y estilos del contenido de ejemplo */
+.contenedor h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.contenedor h2 {
+  font-family: "Times New Roman", Times, serif;
+  color: red;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.contenedor {
+  border: 1px solid #4a7ebb;
+  padding: 15px;
+  width: min(800px, 100%);
+  margin: 0 auto;
+  background: #fff;
+  color: #111;
+}
+
+.contenedor2 {
+  border: 1px solid #4a7ebb;
+  padding: 15px;
+  max-width: 800px;
+  margin-top: 10px;
+  font-size: 8px;
+  padding: 1px 2px;
+  background-color: #cbcbcb;
+}
+
+.parrafo {
+  margin-top: 60px;
+  font-size: 30px;
+}
+
+.foto {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 19px auto 0;
+}
+
+.hr {
+  margin-top: 15px;
+}

@@ -1,0 +1,339 @@
+/* Cuadro centrado del servicio de cambio de nombre */
+.ejercicio-cambio-nombre {
+  width: min(850px, 100%);
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid #4a7ebb;
+  background: #fff;
+  color: #17191c;
+  font-family: Arial, sans-serif;
+}
+
+/* Navegación visible de las cinco páginas del ejercicio */
+.pasos-cambio {
+  padding: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  border-bottom: 1px solid #dce2eb;
+  background: #f5f7fb;
+}
+
+.paso-cambio {
+  padding: 9px 12px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: transparent;
+  color: #5b6472;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.paso-cambio span {
+  margin-right: 5px;
+  color: #778398;
+  font-size: 0.7rem;
+}
+
+.paso-cambio:hover,
+.paso-cambio.activo {
+  border-color: #b8c9ec;
+  background: #eaf0ff;
+  color: #244b9a;
+}
+
+/* Contenido común de cada una de las cinco páginas */
+.pagina-cambio {
+  padding: clamp(20px, 5vw, 42px);
+}
+
+.pagina-cambio[hidden] {
+  display: none;
+}
+
+.etiqueta-cambio {
+  margin: 0 0 10px;
+  color: #63718a;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.pagina-cambio h2 {
+  margin: 0 0 18px;
+  color: #17191c;
+  font-size: clamp(1.45rem, 3vw, 2rem);
+}
+
+.pagina-cambio blockquote {
+  margin: 0 0 24px;
+  color: #575d68;
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.65;
+}
+
+.pagina-cambio cite {
+  display: block;
+  color: #303743;
+  font-size: 0.85rem;
+  font-style: normal;
+}
+
+/* Nombre protagonista de la página principal */
+.nombre-destacado {
+  margin: 20px 0;
+  color: #c90000;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(5rem, 20vw, 10rem);
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+}
+
+.enlaces-cambio {
+  padding-top: 16px;
+  border-top: 1px solid #c9cdd4;
+  color: #3e4652;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.enlaces-cambio a {
+  color: #2458a6;
+}
+
+.enlaces-cambio p {
+  margin: 14px 0 0;
+}
+
+/* Botones para avanzar y retroceder entre las páginas */
+.acciones-cambio {
+  margin-top: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.boton-cambio {
+  min-height: 40px;
+  padding: 0 16px;
+  border: 1px solid #285cc0;
+  border-radius: 8px;
+  background: #285cc0;
+  color: #fff;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.boton-cambio:hover {
+  background: #1d499f;
+}
+
+.boton-cambio.secundario {
+  border-color: #c9d0dc;
+  background: #fff;
+  color: #3c4656;
+}
+
+.boton-cambio.secundario:hover {
+  background: #f1f3f7;
+}
+
+/* Reproductor de Juan de la Cierva adaptable al ancho disponible */
+.marco-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #111;
+}
+
+.marco-video iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.texto-ayuda {
+  margin: 0;
+  color: #657083;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Campos obligatorios del registro y controles de la encuesta */
+.formulario-cambio {
+  margin-top: 22px;
+  display: grid;
+  gap: 16px;
+}
+
+.formulario-cambio > label {
+  display: grid;
+  gap: 7px;
+  color: #303743;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.formulario-cambio input:not([type="radio"]),
+.formulario-cambio select {
+  width: 100%;
+  min-height: 42px;
+  padding: 9px 11px;
+  border: 1px solid #b9c1ce;
+  border-radius: 6px;
+  background: #fff;
+  color: #17191c;
+}
+
+.formulario-cambio input:focus,
+.formulario-cambio select:focus {
+  border-color: #285cc0;
+  outline: 2px solid #285cc055;
+  outline-offset: 1px;
+}
+
+.formulario-cambio fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 14px;
+  border: 1px solid #d0d5df;
+  border-radius: 7px;
+}
+
+.formulario-cambio legend {
+  padding: 0 5px;
+  color: #303743;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.opciones-opinion {
+  display: grid;
+  gap: 12px;
+}
+
+.opciones-opinion label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #303743;
+  font-size: 0.88rem;
+}
+
+.estrellas-cambio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.estrellas-cambio label {
+  position: relative;
+  color: #aab1bd;
+  cursor: pointer;
+  font-size: 1.2rem;
+  letter-spacing: 0.04em;
+}
+
+.estrellas-cambio input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.estrellas-cambio input:checked + span,
+.estrellas-cambio label:hover {
+  color: #e2a600;
+}
+
+.estrellas-cambio input:focus-visible + span {
+  outline: 2px solid #285cc0;
+  outline-offset: 3px;
+}
+
+/* Pantalla y diálogo que confirman que el proceso ha terminado */
+.mensaje-final {
+  min-height: 190px;
+  margin: 10px auto 24px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 3px solid #17191c;
+  color: #17191c;
+  text-align: center;
+}
+
+.mensaje-final .etiqueta-cambio {
+  margin-bottom: 16px;
+}
+
+.mensaje-final h2 {
+  margin: 0 0 14px;
+}
+
+.mensaje-final > p:last-child {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.pagina-cambio[data-contenido="final"] > .boton-cambio {
+  display: block;
+  margin-left: auto;
+}
+
+.dialogo-final {
+  width: min(400px, calc(100% - 32px));
+  padding: 26px;
+  border: 1px solid #cbd3df;
+  border-radius: 12px;
+  color: #17191c;
+}
+
+.dialogo-final::backdrop {
+  background: #10111399;
+}
+
+.dialogo-final h2 {
+  margin: 0 0 10px;
+}
+
+.dialogo-final p {
+  margin: 0;
+  color: #586273;
+  line-height: 1.6;
+}
+
+.dialogo-final form {
+  margin-top: 20px;
+  text-align: right;
+}
+
+@media (max-width: 520px) {
+  .pasos-cambio {
+    gap: 4px;
+    padding: 10px 6px;
+  }
+
+  .paso-cambio {
+    padding: 8px 7px;
+    font-size: 0.72rem;
+  }
+
+  .paso-cambio span {
+    display: block;
+    margin: 0 0 3px;
+  }
+
+  .acciones-cambio > .boton-cambio {
+    flex: 1 1 100%;
+  }
+}

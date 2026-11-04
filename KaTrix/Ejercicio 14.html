@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="es">
+  <!-- Configuración de la página y recursos compartidos -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101113" />
+    <title>KaTrix — Parte 4, Ejercicio 1</title>
+    <link rel="icon" href="imagenes/katrix-favicon.png" type="image/png" />
+    <link rel="stylesheet" href="CSS/ESTILO.css" />
+    <link rel="stylesheet" href="CSS/CSS EJ14.css" />
+    <script src="JS/Desplegable.js" defer></script>
+    <script src="JS/Ejercicio14.js" defer></script>
+  </head>
+  <body>
+    <!-- Encabezado común con identidad, navegación y acceso a los ejercicios -->
+    <header class="encabezado-sitio">
+      <a class="marca" href="inicio.html" aria-label="KaTrix, inicio"
+        ><img src="imagenes/katrix-logo.png" alt="" /><span>KaTrix</span></a
+      >
+
+      <!-- Enlaces a las secciones principales del sitio -->
+      <nav class="navegacion-sitio" aria-label="Navegación principal">
+        <a href="inicio.html">Inicio</a>
+        <a href="Horario.html">Horario</a>
+        <a href="Formulario.html">Formulario</a>
+        <a href="Calculadora.html">Calculadora</a>
+        <a href="Juego PPT.html">Piedra, papel o tijera</a>
+      </nav>
+
+      <!-- Menú para abrir los ejercicios disponibles -->
+      <div class="desplegable-header">
+        <button class="boton-desplegable" type="button" aria-expanded="false">
+          <span>Ejercicio</span>
+          <span class="flecha" aria-hidden="true">▼</span>
+        </button>
+        <div class="contenido-desplegable">
+          <a href="Ejercicio 11.html">Parte 1, Ejercicio 1</a>
+          <a href="Ejercicio 21.html">Parte 1, Ejercicio 2</a>
+          <a href="Ejercicio 31.html">Parte 1, Ejercicio 3</a>
+          <hr />
+          <a href="Ejercicio 12.html">Parte 2, Ejercicio 1</a>
+          <a href="Ejercicio 22.html">Parte 2, Ejercicio 2</a>
+          <a href="Ejercicio 32.html">Parte 2, Ejercicio 3</a>
+          <hr />
+          <a href="Ejercicio 13.html">Parte 3, Ejercicio 1</a>
+          <a href="Ejercicio 23.html">Parte 3, Ejercicio 2</a>
+          <hr />
+          <a href="Ejercicio 14.html">Parte 4, Ejercicio 1</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Título y contenido del ejercicio -->
+    <main class="pagina-ejercicio">
+      <div class="encabezado-ejercicio">
+        <h1 class="titulo-pagina">
+          PARTE 4<br /><span class="texto-degradado">EJERCICIO 1.</span>
+        </h1>
+        <p class="introduccion-pagina">
+          Servicio interactivo de 5 páginas para consultar información sobre tu
+          nombre, ver contenido multimedia relacionado, registrar tus datos de
+          usuario y realizar un cambio de nombre personalizado de forma
+          sencilla.
+        </p>
+      </div>
+
+      <!-- Aplicación de cinco páginas para consultar y cambiar un nombre -->
+      <section
+        class="ejercicio-cambio-nombre"
+        aria-label="Servicio de cambio de nombre"
+      >
+        <!-- Navegación entre las cinco páginas del ejercicio -->
+        <nav class="pasos-cambio" aria-label="Páginas del servicio">
+          <button
+            type="button"
+            class="paso-cambio activo"
+            data-pagina="principal"
+            aria-current="step"
+          >
+            <span>01</span> Principal
+          </button>
+          <button type="button" class="paso-cambio" data-pagina="video">
+            <span>02</span> Vídeo
+          </button>
+          <button type="button" class="paso-cambio" data-pagina="usuario">
+            <span>03</span> Usuario
+          </button>
+          <button type="button" class="paso-cambio" data-pagina="opinion">
+            <span>04</span> Opinión
+          </button>
+          <button type="button" class="paso-cambio" data-pagina="final">
+            <span>05</span> Final
+          </button>
+        </nav>
+
+        <!-- Página principal con el nombre, la cita y los enlaces de consulta -->
+        <article class="pagina-cambio visible" data-contenido="principal">
+          <p class="etiqueta-cambio">SERVICIO CENTRALIZADO</p>
+          <h2>Servicio centralizado de cambio de nombre</h2>
+          <blockquote>
+            “Cambiar los nombres sin cambiar las cosas es lo primero con lo que
+            se engaña al pueblo en todas las revoluciones”
+            <cite>Jacinto Benavente</cite>
+          </blockquote>
+          <p class="nombre-destacado" aria-label="Nombre actual: Juan">Juan</p>
+          <div class="enlaces-cambio">
+            <a
+              href="https://www.ine.es/widgets/nombApell/index.shtml"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Consulta los nombres más comunes de España
+            </a>
+            <p>
+              Explora el vídeo, completa tus datos y cuéntanos qué opinas de tu
+              nombre.
+            </p>
+          </div>
+          <div class="acciones-cambio">
+            <button type="button" class="boton-cambio" data-ir-a="video">
+              Ver la página 2: vídeo
+            </button>
+            <button
+              type="button"
+              class="boton-cambio secundario"
+              data-ir-a="usuario"
+            >
+              Ir a mis datos
+            </button>
+          </div>
+        </article>
+
+        <!-- Página de información sobre Juan de la Cierva con vídeo incrustado -->
+        <article class="pagina-cambio" data-contenido="video" hidden>
+          <p class="etiqueta-cambio">PÁGINA 2 · SEGUNDA LETRA</p>
+          <h2>Juan de la Cierva</h2>
+          <div class="marco-video">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/M4iY05rKEeI"
+              title="El autogiro de Juan de la Cierva"
+              loading="lazy"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p class="texto-ayuda">
+            Conoce a Juan de la Cierva y su invento, el autogiro.
+          </p>
+          <div class="acciones-cambio">
+            <button
+              type="button"
+              class="boton-cambio secundario"
+              data-ir-a="principal"
+            >
+              Volver a Principal
+            </button>
+            <button type="button" class="boton-cambio" data-ir-a="usuario">
+              Continuar a Usuario
+            </button>
+          </div>
+        </article>
+
+        <!-- Página de registro con los datos obligatorios del usuario -->
+        <article class="pagina-cambio" data-contenido="usuario" hidden>
+          <p class="etiqueta-cambio">PÁGINA 3 · TERCERA LETRA</p>
+          <h2>Datos del usuario</h2>
+          <p class="texto-ayuda">Completa todos los campos para continuar.</p>
+          <form class="formulario-cambio" id="formulario-usuario">
+            <label>
+              Nombre
+              <input
+                name="nombre"
+                type="text"
+                autocomplete="given-name"
+                required
+              />
+            </label>
+            <label>
+              Apellidos
+              <input
+                name="apellidos"
+                type="text"
+                autocomplete="family-name"
+                required
+              />
+            </label>
+            <label>
+              Fecha de nacimiento
+              <input name="fecha" type="date" autocomplete="bday" required />
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email" required />
+            </label>
+            <label>
+              Contraseña
+              <input
+                name="contrasena"
+                type="password"
+                autocomplete="new-password"
+                required
+              />
+            </label>
+            <div class="acciones-cambio">
+              <button type="reset" class="boton-cambio secundario">
+                Restablecer
+              </button>
+              <button type="submit" class="boton-cambio">Enviar</button>
+            </div>
+          </form>
+        </article>
+
+        <!-- Página para valorar el nombre y enviar una sugerencia opcional -->
+        <article class="pagina-cambio" data-contenido="opinion" hidden>
+          <p class="etiqueta-cambio">PÁGINA 4 · OPINIÓN</p>
+          <h2>¿Te gusta tu nombre?</h2>
+          <p class="texto-ayuda">
+            Elige una respuesta y dinos qué nombre prefieres.
+          </p>
+          <form class="formulario-cambio" id="formulario-opinion">
+            <fieldset class="opciones-opinion">
+              <legend>¿Estás conforme con tu nombre?</legend>
+              <label
+                ><input type="radio" name="opinion" value="si" /> Sí, me
+                gusta</label
+              >
+              <label
+                ><input type="radio" name="opinion" value="no" /> No, quiero
+                cambiarlo</label
+              >
+              <label
+                ><input type="radio" name="opinion" value="no-se" /> No lo
+                sé</label
+              >
+            </fieldset>
+            <label>
+              Nombres sugeridos
+              <select name="nombre-sugerido">
+                <option value="">Elige un nombre</option>
+                <option>Antonio</option>
+                <option>Juan</option>
+                <option>José</option>
+                <option>Manuel</option>
+                <option>Otro</option>
+              </select>
+            </label>
+            <label>
+              Escribe el nombre que prefieres
+              <input name="otro-nombre" type="text" placeholder="Nombre" />
+            </label>
+            <fieldset class="valoracion-opinion">
+              <legend>Valora tu experiencia de usuario</legend>
+              <div class="estrellas-cambio" aria-label="Puntuación de 1 a 5">
+                <label
+                  ><input type="radio" name="valoracion" value="1" /><span
+                    aria-label="1 estrella"
+                    >★</span
+                  ></label
+                >
+                <label
+                  ><input type="radio" name="valoracion" value="2" /><span
+                    aria-label="2 estrellas"
+                    >★★</span
+                  ></label
+                >
+                <label
+                  ><input type="radio" name="valoracion" value="3" /><span
+                    aria-label="3 estrellas"
+                    >★★★</span
+                  ></label
+                >
+                <label
+                  ><input type="radio" name="valoracion" value="4" /><span
+                    aria-label="4 estrellas"
+                    >★★★★</span
+                  ></label
+                >
+                <label
+                  ><input type="radio" name="valoracion" value="5" /><span
+                    aria-label="5 estrellas"
+                    >★★★★★</span
+                  ></label
+                >
+              </div>
+            </fieldset>
+            <div class="acciones-cambio">
+              <button type="reset" class="boton-cambio secundario">
+                Restablecer
+              </button>
+              <button type="submit" class="boton-cambio">Enviar</button>
+            </div>
+          </form>
+        </article>
+
+        <!-- Página final que confirma que el proceso ha terminado -->
+        <article class="pagina-cambio" data-contenido="final" hidden>
+          <div class="mensaje-final">
+            <p class="etiqueta-cambio">PÁGINA 5</p>
+            <h2>Proceso finalizado</h2>
+            <p>¡GRACIAS!</p>
+          </div>
+          <button type="button" class="boton-cambio" data-ir-a="principal">
+            Volver al inicio
+          </button>
+        </article>
+
+        <!-- Diálogo de confirmación al enviar la opinión -->
+        <dialog class="dialogo-final" id="dialogo-finalizado">
+          <h2>Proceso finalizado</h2>
+          <p>Gracias por completar el formulario.</p>
+          <form method="dialog">
+            <button type="submit" class="boton-cambio">Aceptar</button>
+          </form>
+        </dialog>
+      </section>
+
+      <section class="secciones-inicio" aria-label="Ejercicios disponibles">
+        <div class="rejilla-tarjetas">
+          <div class="tarjeta tarjeta-ejercicios">
+            <span class="icono-tarjeta" aria-hidden="true">✎</span>
+            <h3>Ejercicios parte 1</h3>
+            <p>
+              <a href="Ejercicio 11.html">Ejercicio 1</a>
+              <span aria-hidden="true">·</span>
+              <a href="Ejercicio 21.html">Ejercicio 2</a>
+              <span aria-hidden="true">·</span>
+              <a href="Ejercicio 31.html">Ejercicio 3</a>
+            </p>
+          </div>
+          <div class="tarjeta tarjeta-ejercicios">
+            <span class="icono-tarjeta" aria-hidden="true">✎</span>
+            <h3>Ejercicios parte 2</h3>
+            <p>
+              <a href="Ejercicio 12.html">Ejercicio 1</a>
+              <span aria-hidden="true">·</span>
+              <a href="Ejercicio 22.html">Ejercicio 2</a>
+              <span aria-hidden="true">·</span>
+              <a href="Ejercicio 32.html">Ejercicio 3</a>
+            </p>
+          </div>
+          <div class="tarjeta tarjeta-ejercicios">
+            <span class="icono-tarjeta" aria-hidden="true">✎</span>
+            <h3>Ejercicios parte 3</h3>
+            <p>
+              <a href="Ejercicio 13.html">Ejercicio 1</a>
+              <span aria-hidden="true">·</span>
+              <a href="Ejercicio 23.html">Ejercicio 2</a>
+            </p>
+          </div>
+          <div class="tarjeta tarjeta-ejercicios">
+            <span class="icono-tarjeta" aria-hidden="true">✎</span>
+            <h3>Ejercicios parte 4</h3>
+            <p><a href="Ejercicio 14.html">Ejercicio 1</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pie común con presentación, navegación y redes profesionales -->
+    <footer class="pie-portada">
+      <div class="pie-portada-columnas">
+        <section class="pie-presentacion" aria-labelledby="nombre-pie">
+          <h2 id="nombre-pie">
+            <span class="indicador-disponible" aria-hidden="true"></span>
+            Alejandro Reina
+          </h2>
+          <p>
+            Alumno de primer grado de Desarrollo de Aplicaciones Web (DAW).
+            Creo proyectos utilizando HTML, CSS y JavaScript.
+          </p>
+          <span class="insignia-estudios">Grado Superior DAW — 2026</span>
+        </section>
+        <nav class="pie-navegacion" aria-label="Navegación del pie de página">
+          <h2>Navegación</h2>
+          <a href="inicio.html#inicio">Inicio</a>
+          <a href="inicio.html#secciones">Mis proyectos</a>
+        </nav>
+        <section class="pie-redes" aria-labelledby="titulo-redes">
+          <h2 id="titulo-redes">Redes profesionales</h2>
+          <a
+            href="https://github.com/alejandroilliareina-beep?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+          >GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </section>
+      </div>
+      <div class="pie-portada-final">
+        <p>© 2026 Alejandro. Diseñado para mi primera web.</p>
+        <p>Hecho con <span aria-label="amor">♥</span> en España</p>
+      </div>
+    </footer>
+  </body>
+</html>

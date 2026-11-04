@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+/* Restablecimiento de espacios y estilo general del juego */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fredoka One", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f4f6f8 url("../imagenes/fondo.jpg");
+  color: #393e46;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+/* Encabezado de navegación */
+.encabezado-sitio {
+  width: 100%;
+  font-family: cursive;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -75px;
+  padding: 22px 40px;
+  gap: 20px;
+  box-shadow: 0 6px 5px;
+}
+
+.encabezado-sitio h1 {
+  color: white;
+}
+
+.encabezado-sitio a {
+  color: white;
+  text-decoration: none;
+  padding-right: 15px;
+}
+
+.encabezado .titulo-encabezado {
+  font-size: 2.5rem;
+  margin: 40px 0;
+}
+
+/* Marcador y presentación de las jugadas */
+.contenedor-principal {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-principal .contenedor-enfrentamiento {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: #393e46 10px solid;
+  padding: 50px 50px 0px 50px;
+  border-radius: 25px;
+  margin-bottom: 50px;
+  background: #f7f7f7;
+}
+
+.contenedor-principal .contenedor-enfrentamiento .jugador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.contenedor-principal .contenedor-enfrentamiento img {
+  height: 180px;
+  width: auto;
+}
+
+.contenedor-principal .contenedor-enfrentamiento .contra {
+  margin: 0 3.5rem;
+}
+
+/* Botones de selección y controles para jugar una ronda */
+.contenedor-principal .contenedor-juego .opciones-juego {
+  display: flex;
+  flex-direction: row;
+}
+
+.contenedor-principal .contenedor-juego .opciones-juego button,
+.contenedor-principal .iniciar-juego button {
+  margin: 0px 20px 40px 20px;
+  width: 80px;
+  height: 70px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px #999;
+  border: solid 3px #393e46;
+  cursor: pointer;
+  transition: all 0.5s;
+  background: #f7f7f7;
+}
+.contenedor-principal .contenedor-juego .opciones-juego button:hover,
+.contenedor-principal .iniciar-juego button:hover {
+  background-color: #6d9886;
+}
+
+.contenedor-principal .contenedor-juego .opciones-juego button img,
+.contenedor-principal .iniciar-juego button img {
+  height: 50px;
+  width: auto;
+}
+
+.contenedor-principal .contenedor-juego .detalles {
+  border: #393e46 solid 10px;
+  border-radius: 25px;
+  padding: 20px 110px;
+  background: #f7f7f7;
+}
+
+.contenedor-principal .contenedor-juego {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor-principal .iniciar-juego {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+}

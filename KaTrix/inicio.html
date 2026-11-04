@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="es">
+  <!-- Configuración de la página, título y recursos externos -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101113" />
+    <meta
+      name="description"
+      content="Explora el horario, las herramientas y los proyectos de KaTrix."
+    />
+    <title>KaTrix — Inicio</title>
+    <link rel="icon" href="imagenes/katrix-favicon.png" type="image/png" />
+    <link rel="stylesheet" href="CSS/ESTILO.css" />
+  </head>
+
+  <body>
+    <!-- Encabezado común con identidad, navegación y acceso a los ejercicios -->
+    <header class="encabezado-sitio">
+      <a class="marca" href="inicio.html" aria-label="KaTrix"
+        ><img src="imagenes/katrix-logo.png" alt="" /><span>KaTrix</span></a
+      >
+
+      <!-- Enlaces a las secciones principales del sitio -->
+      <nav class="navegacion-sitio" aria-label="Navegación principal">
+        <a href="inicio.html" aria-current="page">Inicio</a>
+        <a href="Horario.html">Horario</a>
+        <a href="Formulario.html">Formulario</a>
+        <a href="Calculadora.html">Calculadora</a>
+        <a href="Juego PPT.html">Piedra, papel o tijera</a>
+      </nav>
+
+      <!-- Menú para abrir los ejercicios disponibles -->
+      <div class="desplegable-header">
+        <button class="boton-desplegable" type="button" aria-expanded="false">
+          <span>Ejercicio</span>
+          <span class="flecha" aria-hidden="true">▼</span>
+        </button>
+        <div class="contenido-desplegable">
+          <a href="Ejercicio 11.html">Parte 1, Ejercicio 1</a>
+          <a href="Ejercicio 21.html">Parte 1, Ejercicio 2</a>
+          <a href="Ejercicio 31.html">Parte 1, Ejercicio 3</a>
+          <hr />
+          <a href="Ejercicio 12.html">Parte 2, Ejercicio 1</a>
+          <a href="Ejercicio 22.html">Parte 2, Ejercicio 2</a>
+          <a href="Ejercicio 32.html">Parte 2, Ejercicio 3</a>
+          <hr />
+          <a href="Ejercicio 13.html">Parte 3, Ejercicio 1</a>
+          <a href="Ejercicio 23.html">Parte 3, Ejercicio 2</a>
+          <hr />
+          <a href="Ejercicio 14.html">Parte 4, Ejercicio 1</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contenido principal de la portada -->
+    <main class="contenedor-pagina" id="inicio">
+      <!-- Presentación del sitio y enlaces destacados -->
+      <section class="portada-inicio" aria-labelledby="titulo-inicio">
+        <div class="texto-portada">
+          <p class="texto-superior">Alejandro Reina Fernández</p>
+          <h1 class="titulo-pagina" id="titulo-inicio">
+            MI PÁGINA,<br /><span class="texto-degradado">WEB.</span>
+          </h1>
+          <p class="introduccion-pagina">
+            Bienvenido a mi primera página web como alumno de primer año de DAW.
+            En mi página web puedes encontrar mi horario, un formulario, una
+            calculadora, el famoso juego de piedra, papel o tijera y todos los
+            ejercicios realizados durante todo el curso.
+          </p>
+          <div class="acciones-portada">
+            <a class="enlace-boton" href="Horario.html"
+              >Ver mi horario <span aria-hidden="true">↗</span></a
+            >
+            <a class="enlace-boton secundario" href="#secciones"
+              >Explorar los apartados</a
+            >
+          </div>
+        </div>
+        <div
+          class="ilustracion-portada"
+          aria-label="Ilustración abstracta de KaTrix"
+        >
+          <div class="identidad-orbital">
+            <img src="imagenes/katrix-logo.png" alt="Logo de KaTrix" />
+            <span>KaTrix</span>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="destacado-apartado"
+        aria-labelledby="titulo-destacado-horario"
+      >
+        <div
+          class="vista-previa-apartado vista-previa-horario"
+          aria-hidden="true"
+        >
+          <table class="mini-horario">
+            <thead>
+              <tr>
+                <th>Hora</th>
+                <th>Lun</th>
+                <th>Mar</th>
+                <th>Mié</th>
+                <th>Jue</th>
+                <th>Vie</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>8:30</th>
+                <td rowspan="2">Programación</td>
+                <td>SINF</td>
+                <td rowspan="2">BBDD</td>
+                <td rowspan="2">Programación</td>
+                <td rowspan="2">IPE</td>
+              </tr>
+              <tr>
+                <th>9:25</th>
+                <td>Inglés</td>
+              </tr>
+              <tr>
+                <th>10:20</th>
+                <td>Proyecto intermodular</td>
+                <td>BBDD</td>
+                <td>LLMM</td>
+                <td>SINF</td>
+                <td>Digitalización</td>
+              </tr>
+              <tr>
+                <th>11:15</th>
+                <td class="mini-recreo" colspan="5">RECREO</td>
+              </tr>
+              <tr>
+                <th>11:45</th>
+                <td>SINF</td>
+                <td rowspan="2">BBDD</td>
+                <td rowspan="2">Programación</td>
+                <td>SINF</td>
+                <td>Digitalización</td>
+              </tr>
+              <tr>
+                <th>12:40</th>
+                <td rowspan="2">LLMM</td>
+                <td>Sostenibilidad</td>
+                <td rowspan="2">Entorno desarrollo</td>
+              </tr>
+              <tr>
+                <th>13:35</th>
+                <td>IPE</td>
+                <td>SINF</td>
+                <td>Inglés</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="texto-destacado-apartado">
+          <h2 id="titulo-destacado-horario">HORARIO <span>DAW</span></h2>
+          <p>
+            El Horario DAW es un panel interactivo que permite consultar de
+            manera clara y organizada la distribución semanal de las clases, las
+            aulas asignadas y los módulos lectivos del ciclo de Desarrollo de
+            Aplicaciones Web.
+          </p>
+          <a class="enlace-boton" href="Horario.html">Ver Horario</a>
+        </div>
+      </section>
+
+      <section
+        class="destacado-apartado"
+        aria-labelledby="titulo-destacado-formulario"
+      >
+        <div
+          class="vista-previa-apartado vista-previa-formulario"
+          aria-hidden="true"
+        >
+          <div class="mini-formulario">
+            <h3>Crear perfil</h3>
+            <div class="mini-campo">
+              <span>Nombre</span>
+              <div>Tu nombre</div>
+            </div>
+            <div class="mini-campo">
+              <span>Correo electrónico</span>
+              <div>nombre@ejemplo.com</div>
+            </div>
+            <div class="mini-campo">
+              <span>Contraseña</span>
+              <div>••••••••</div>
+            </div>
+            <span class="mini-boton-formulario">Crear perfil</span>
+          </div>
+        </div>
+        <div class="texto-destacado-apartado">
+          <h2 id="titulo-destacado-formulario">MI <span>FORMULARIO</span></h2>
+          <p>
+            El Formulario de Registro es un espacio interactivo en la web
+            diseñado para ingresar tus datos personales, registrarte en la
+            plataforma y compartir tus preferencias de forma rápida y segura.
+          </p>
+          <a class="enlace-boton" href="Formulario.html">Ver Formulario</a>
+        </div>
+      </section>
+
+      <section
+        class="destacado-apartado"
+        aria-labelledby="titulo-destacado-calculadora"
+      >
+        <div
+          class="vista-previa-apartado vista-previa-calculadora"
+          aria-hidden="true"
+        >
+          <div class="mini-calculadora">
+            <div class="mini-cabecera-calculadora">
+              <span>Calculadora</span>
+              <small>ESTÁNDAR</small>
+            </div>
+            <div class="mini-pantalla-calculadora">125 + 38</div>
+            <div class="mini-teclas-calculadora">
+              <span>7</span>
+              <span>8</span>
+              <span>9</span>
+              <span class="mini-operador">÷</span>
+              <span>4</span>
+              <span>5</span>
+              <span>6</span>
+              <span class="mini-operador">×</span>
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span class="mini-operador">−</span>
+              <span>0</span>
+              <span>.</span>
+              <span class="mini-igual">=</span>
+              <span class="mini-operador">+</span>
+              <span class="mini-borrar">Borrar</span>
+            </div>
+          </div>
+        </div>
+        <div class="texto-destacado-apartado">
+          <h2 id="titulo-destacado-calculadora">MI <span>CALCULADORA</span></h2>
+          <p>
+            La Calculadora Interactiva es una herramienta web integrada que
+            permite realizar operaciones matemáticas de forma rápida, dinámica y
+            directa desde la interfaz de usuario, sin necesidad de recurrir a
+            aplicaciones externas.
+          </p>
+          <a class="enlace-boton" href="Calculadora.html">Abrir Calculadora</a>
+        </div>
+      </section>
+
+      <section
+        class="destacado-apartado"
+        aria-labelledby="titulo-destacado-juego"
+      >
+        <div
+          class="vista-previa-apartado vista-previa-juego"
+          aria-hidden="true"
+        >
+          <div class="mini-juego">
+            <div class="mini-marcador-juego">
+              <div>
+                <img src="imagenes/persona.svg" alt="" />
+                <span>Tú</span>
+                <strong>0</strong>
+              </div>
+              <b>VS</b>
+              <div>
+                <img src="imagenes/cpu.svg" alt="" />
+                <span>CPU</span>
+                <strong>0</strong>
+              </div>
+            </div>
+            <p>ELIGE TU JUGADA</p>
+            <div class="mini-opciones-juego">
+              <span><img src="imagenes/piedra.svg" alt="" /></span>
+              <span><img src="imagenes/papel.svg" alt="" /></span>
+              <span><img src="imagenes/tijera.svg" alt="" /></span>
+            </div>
+            <div class="mini-controles-juego">
+              <span>▶ Jugar ronda</span>
+              <span>↻ Reiniciar</span>
+            </div>
+          </div>
+        </div>
+        <div class="texto-destacado-apartado">
+          <h2 id="titulo-destacado-juego">
+            PIEDRA, PAPEL <span>O TIJERA</span>
+          </h2>
+          <p>
+            En una versión digital contra el ordenador, el jugador selecciona su
+            opción, mientras que el ordenador genera su elección de manera
+            aleatoria mediante un algoritmo. El programa evalúa ambas elecciones
+            aplicando la lógica del juego para determinar e informar
+            inmediatamente el resultado.
+          </p>
+          <a class="enlace-boton" href="Juego PPT.html">Jugar</a>
+        </div>
+      </section>
+
+      <!-- Proyectos y ejercicios organizados en tarjetas -->
+      <section
+        class="secciones-inicio"
+        id="secciones"
+        aria-labelledby="titulo-secciones"
+      >
+        <div class="encabezado-seccion">
+          <h2 class="titulo-seccion" id="titulo-secciones">
+            Proyectos y ejercicios
+          </h2>
+          <p>Mis proyectos y ejercicios realizados hasta la fecha.</p>
+        </div>
+        <div class="rejilla-tarjetas">
+          <a class="tarjeta" href="Horario.html">
+            <span class="icono-tarjeta" aria-hidden="true">▦</span>
+            <h3>Horario</h3>
+            <p>Consulta las clases y el profesorado.</p>
+          </a>
+          <a class="tarjeta" href="Formulario.html">
+            <span class="icono-tarjeta" aria-hidden="true">📄</span>
+            <h3>Formulario</h3>
+            <p>Completa un formulario.</p>
+          </a>
+          <a class="tarjeta" href="Calculadora.html">
+            <span class="icono-tarjeta" aria-hidden="true">÷</span>
+            <h3>Calculadora</h3>
+            <p>Resuelve operaciones al alcance de tu mano.</p>
+          </a>
+          <a class="tarjeta" href="Juego PPT.html">
+            <span class="icono-tarjeta" aria-hidden="true">🪨</span>
+            <h3>Piedra, papel o tijera</h3>
+            <p>Juega contra un bot para ver quién gana.</p>
+          </a>
+          <div class="tarjeta tarjeta-ejercicios">
+            <span class="icono-tarjeta" aria-hidden="true">✎</span>
+            <h3>Ejercicios parte 1</h3>
+            <p>
+              <a href="Ejercicio 11.html">Ejercicio 1</a>
+              <span aria-hidden="true">·</span>
+              <a href="Ejercicio 21.html">Ejercicio 2</a>
+              <span aria-hidden="true">·</span>
+              <a href="Ejercicio 31.html">Ejercicio 3</a>
+            </p>
+          </div>
+          <div class="tarjeta tarjeta-ejercicios">
+            <span class="icono-tarjeta" aria-hidden="true">✎</span>
+            <h3>Ejercicios parte 2</h3>
+            <p>
+              <a href="Ejercicio 12.html">Ejercicio 1</a>
+              <span aria-hidden="true">·</span>
+              <a href="Ejercicio 22.html">Ejercicio 2</a>
+              <span aria-hidden="true">·</span>
+              <a href="Ejercicio 32.html">Ejercicio 3</a>
+            </p>
+          </div>
+          <div class="tarjeta tarjeta-ejercicios">
+            <span class="icono-tarjeta" aria-hidden="true">✎</span>
+            <h3>Ejercicios parte 3</h3>
+            <p>
+              <a href="Ejercicio 13.html">Ejercicio 1</a>
+              <span aria-hidden="true">·</span>
+              <a href="Ejercicio 23.html">Ejercicio 2</a>
+            </p>
+          </div>
+          <div class="tarjeta tarjeta-ejercicios">
+            <span class="icono-tarjeta" aria-hidden="true">✎</span>
+            <h3>Ejercicios parte 4</h3>
+            <p>
+              <a href="Ejercicio 14.html">Ejercicio 1</a>
+              <span aria-hidden="true"></span>
+            </p>  
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pie de página con presentación, navegación y redes profesionales -->
+    <footer class="pie-portada">
+      <div class="pie-portada-columnas">
+        <section class="pie-presentacion" aria-labelledby="nombre-pie">
+          <h2 id="nombre-pie">
+            <span class="indicador-disponible" aria-hidden="true"></span>
+            Alejandro Reina
+          </h2>
+          <p>
+            Alumno de primer grado de Desarrollo de Aplicaciones Web (DAW). Creo
+            proyectos utilizando HTML, CSS y JavaScript.
+          </p>
+          <span class="insignia-estudios">Grado Superior DAW — 2026</span>
+        </section>
+
+        <nav class="pie-navegacion" aria-label="Navegación del pie de página">
+          <h2>Navegación</h2>
+          <a href="inicio.html#inicio">Inicio</a>
+          <a href="inicio.html#secciones">Mis proyectos</a>
+        </nav>
+
+        <section class="pie-redes" aria-labelledby="titulo-redes">
+          <h2 id="titulo-redes">Redes profesionales</h2>
+          <a
+            href="https://github.com/alejandroilliareina-beep?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </section>
+      </div>
+
+      <div class="pie-portada-final">
+        <p>© 2026 Alejandro. Diseñado para mi primera web.</p>
+      </div>
+    </footer>
+
+    <script src="JS/Desplegable.js" defer></script>
+  </body>
+</html>

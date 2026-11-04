@@ -1,0 +1,74 @@
+/* Tipografía base y fondo general de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: white;
+    min-height: 100vh;
+}
+
+/* Marco centrado con la imagen decorativa de fondo */
+.contenedor-ejercicio {
+    width: min(800px, 100%);
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #4a7ebb;
+    background-color: #fff;
+    background-image: url("../imagenes/EJERCICIO 3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #111;
+}
+
+/* Bloque superior translúcido y texto de encabezado */
+.bloque-div {
+    background-color: rgb(120 144 156 / 88%);
+    color: #ffffff;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.bloque-div h2 {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bloque-div p {
+    font-size: 11px;
+    line-height: 1.2;
+    margin-bottom: 15px;   
+}
+
+/* Bloque inferior translúcido y texto con fragmentos destacados */
+.bloque-inferior {
+    background-color: rgb(240 230 140 / 82%);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.bloque-inferior p {
+    font-size: 11px;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.resaltado-magenta {
+    background-color: #ff00ff;
+    color: #000000;
+}
+
+.destacado-negrita {
+    background-color: #aed581;
+    font-weight: bold;
+    color: #000000;
+    padding: 0 2px;
+}
+
+.cursiva-subrayada {
+    font-style: italic;
+    text-decoration: underline;
+    background-color: #ffffff;
+    padding: 0 2px;
+}
